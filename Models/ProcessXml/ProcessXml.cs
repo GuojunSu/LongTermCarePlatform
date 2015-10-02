@@ -69,15 +69,6 @@ namespace LongTermCare_Xml_.Models.ProcessXml
             FillLaterSection(PCDXml);
             XDocument FullInsertXml = FinalSection();
             //把結果給學弟
-            //做log紀錄
-            //做LogRecord
-            Log.Trace("Sample trace message");
-            Log.Debug("Sample debug message");
-            Log.Info("Sample informational message");
-            Log.Warn("Sample warning message");
-            Log.Error("Sample error message");
-            Log.Fatal("Sample fatal error message");
-
             // alternatively you can call the Log() method 
             // and pass log level as the parameter.
             Log.Log(LogLevel.Info, "Sample informational message");
@@ -129,6 +120,7 @@ namespace LongTermCare_Xml_.Models.ProcessXml
                                         break;
                                 }
                             }
+                            //寫出數據
                             WriteXml(XmlDoc, "Search", Path_Info.SearchPath, "STUDYXML-1.xml");
                             //處理完初始化
                             XmlInCacher.StudyXml = InitCacher(XmlDoc);
@@ -306,7 +298,7 @@ namespace LongTermCare_Xml_.Models.ProcessXml
             XDocument Doc = XDocument.Load(Path);
             return Doc;
         }
-
+        //寫出Xml資訊
         public int WriteXml(XDocument Doc, string Operation, string OperationPath, string XmlFileName)
         {
             string Path = null;
@@ -317,7 +309,7 @@ namespace LongTermCare_Xml_.Models.ProcessXml
             Doc.Save(Path);
             return 200;
         }
-
+        //初始化記憶體中資訊
         public XDocument InitCacher(XDocument Xml)
         {
             foreach (XElement ele in Xml.Root.Elements())
