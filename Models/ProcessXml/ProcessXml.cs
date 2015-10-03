@@ -23,8 +23,9 @@ namespace LongTermCare_Xml_.Models.ProcessXml
         private InitXml XmlInCacher { get; set; }
         protected Logger Log { get; private set; }
         //建構
-        public ProcessXml()
+        public ProcessXml(SettingInfo Info)
         {
+            Path_Info = Info;
         }
         //建構
         public ProcessXml(SettingInfo Path_Info, InitXml XmlDoc)

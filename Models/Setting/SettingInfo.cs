@@ -20,14 +20,20 @@ namespace LongTermCare_Xml_.Models.Setting
             Stream sourse = new FileStream(SettingFilePath,FileMode.Open,FileAccess.Read);
             ProcessINI ReadINI1 = new ProcessINI(sourse);
             InsertPath = ReadINI1.GetKeyValueString("Environment_Parameter", "InsertPath");
-   
+            sourse.Close();
+
             Stream sourse2 = new FileStream(SettingFilePath, FileMode.Open, FileAccess.Read);
             ProcessINI ReadINI2 = new ProcessINI(sourse2);
             SearchPath = ReadINI2.GetKeyValueString("Environment_Parameter", "SearchPath");
+            sourse2.Close();
 
             Stream sourse3 = new FileStream(SettingFilePath, FileMode.Open, FileAccess.Read);
             ProcessINI ReadINI3 = new ProcessINI(sourse3);
             UpdatePath = ReadINI3.GetKeyValueString("Environment_Parameter", "UpdatePath");
+            sourse3.Close();
+        }
+        ~SettingInfo()
+        {
         }
     }
 }
