@@ -22,27 +22,23 @@ namespace LongTermCare_Xml_.Models.ProcessXml
         private SettingInfo Path_Info { get; set; }
         private InitXml XmlInCacher { get; set; }
         protected Logger Log { get; private set; }
-
+        //建構
+        public ProcessXml()
+        {
+        }
+        //建構
         public ProcessXml(SettingInfo Path_Info, InitXml XmlDoc)
         {
             this.Path_Info = Path_Info;
             this.XmlInCacher = XmlDoc;
-      
         }
-
+        //查詢操作
         public int SearchOperation(XmlDocument Search, string account)
         {
             int FileCount = 0;
             //轉換成XDocument
             this.SearchXml = XDocument.Parse(Search.OuterXml);
             //做LogRecord
-            Log.Trace("Sample trace message");
-            Log.Debug("Sample debug message");
-            Log.Info("Sample informational message");
-            Log.Warn("Sample warning message");
-            Log.Error("Sample error message");
-            Log.Fatal("Sample fatal error message");
-
             // alternatively you can call the Log() method 
             // and pass log level as the parameter.
             Log.Log(LogLevel.Info, "Sample informational message");
@@ -58,7 +54,7 @@ namespace LongTermCare_Xml_.Models.ProcessXml
             }
             return FileCount;
         }
-
+        //新增操作
         public int InsertOperation(XmlDocument PCD)
         {
             Log = LogManager.GetCurrentClassLogger();
@@ -83,7 +79,6 @@ namespace LongTermCare_Xml_.Models.ProcessXml
             }
             return 200;
         }
-
         //處理Patient 和 Study
         public void FillFrontSection(XDocument Doc)
         {
@@ -281,9 +276,10 @@ namespace LongTermCare_Xml_.Models.ProcessXml
             WriteXml(Doc, Operation, Path_Info.InsertPath, ReadFileName);
             return Doc;
         }
-
+        //開啟Xml模板檔案
         public XDocument OpenXml(string Operation, string OperationPath, string XmlFileName)
         {
+            XDocument Doc = null;
             string Path = null;
             if (Operation.Equals("Search"))
                 Path = OperationPath + "SearchModel\\" + XmlFileName;
@@ -295,7 +291,16 @@ namespace LongTermCare_Xml_.Models.ProcessXml
                 Path = OperationPath + "InsertModel\\" + XmlFileName;
             else if (Operation.Equals("InsertQuery"))
                 Path = OperationPath + "Insert_Xml\\" + XmlFileName;
-            XDocument Doc = XDocument.Load(Path);
+            else if (Operation.Equals("Update"))
+                Path = @"D:\C sharp code\LongTermCare(Xml)\Update\" + XmlFileName;
+            try
+            {
+                Doc = XDocument.Load(Path.ToString());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
             return Doc;
         }
         //寫出Xml資訊

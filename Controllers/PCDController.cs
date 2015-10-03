@@ -18,6 +18,7 @@ namespace LongTermCare_Xml_.Controllers
     [RoutePrefix("Api/PCD")]
     public class PCDController : ApiController
     {
+
         private ProcessXml XmlOperation { get; set; }
         private SettingInfo Info { get; set; }
         private InitXml Xml { get; set; }
@@ -51,6 +52,7 @@ namespace LongTermCare_Xml_.Controllers
             }
         }
 
+        //新增PCD 資料
         [HttpPost, Route("Insert")]
         public IHttpActionResult PCDCreate(XmlDocument PCD)
         {
@@ -69,6 +71,7 @@ namespace LongTermCare_Xml_.Controllers
             return Ok();
         }
 
+        //現在提供哪個帳號查詢
         [HttpPost, Route("Search/{account}")]
         public HttpResponseMessage PCDSearch(XmlDocument SearchXml, string account)
         {

@@ -12,6 +12,7 @@ namespace LongTermCare_Xml_.Models.Setting
     {
         public string InsertPath { get; set; }
         public string SearchPath { get; set; }
+        public string UpdatePath { get; set; }
         public SettingInfo()
         {
             //讀取內嵌資源
@@ -23,6 +24,10 @@ namespace LongTermCare_Xml_.Models.Setting
             Stream sourse2 = new FileStream(SettingFilePath, FileMode.Open, FileAccess.Read);
             ProcessINI ReadINI2 = new ProcessINI(sourse2);
             SearchPath = ReadINI2.GetKeyValueString("Environment_Parameter", "SearchPath");
+
+            Stream sourse3 = new FileStream(SettingFilePath, FileMode.Open, FileAccess.Read);
+            ProcessINI ReadINI3 = new ProcessINI(sourse3);
+            UpdatePath = ReadINI3.GetKeyValueString("Environment_Parameter", "UpdatePath");
         }
     }
 }
