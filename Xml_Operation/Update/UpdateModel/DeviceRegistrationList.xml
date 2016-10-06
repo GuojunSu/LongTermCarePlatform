@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DeviceList>    
+  <DeviceRegistration>
+	<MACAddress></MACAddress>
+	<ModalityType></ModalityType>
+	<DeviceID></DeviceID>
+	<ChineseName></ChineseName>
+	<SOPClassUID></SOPClassUID>
+  </DeviceRegistration>
+</DeviceList>

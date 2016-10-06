@@ -1,0 +1,98 @@
+USE [DBname]
+
+CREATE TABLE [dbo].[TableFields](
+	[TableName] [varchar](max) NULL,
+	[Tag] [varchar](max) NULL,
+	[FieldName] [varchar](max) NULL,
+	[VR] [varchar](max) NULL
+) 
+
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'STUDY', N'00080050', N'AccessionNumber', N'SH')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'STUDY', N'0020000d', N'StudyInstanceUID', N'UI')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'STUDY', N'00200010', N'StudyID', N'SH')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'SERIES', N'00080021', N'SeriesDate', N'DA')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'SERIES', N'00100031', N'SeriesTime', N'TM')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'SERIES', N'00100060', N'Modality', N'CS')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'SERIES', N'0020000e', N'SeriesInstanceUID', N'UI')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'SERIES', N'00200011', N'SeriesNumber', N'IS')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'SOPINSTANCE', N'00080016', N'SOPClassUID', N'UI')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'SOPINSTANCE', N'00080018', N'SOPInstanceUID', N'UI')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'SOPINSTANCE', N'00080012', N'InstanceCreationDate', N'DA')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'SOPINSTANCE', N'00080013', N'InstanceCreationTime', N'TM')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'SOPINSTANCE', N'0027a001', N'DeviceRecordResult', N'LO')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'SOPINSTANCE', N'0027a002', N'RecordMeaning', N'ST')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'SOPINSTANCE', N'0018a001', N'ContributingEquipmentSequence', N'SQ')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'SOPINSTANCE', N'00080014', N'InstanceCreatorUID', N'UI')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'PATIENT', N'00100010', N'PatientName', N'PN')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'PATIENT', N'00100020', N'PatientID', N'LO')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'PATIENT', N'00100030', N'PatientsBirthDate', N'DA')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'PATIENT', N'00100040', N'PatientsSex', N'CS')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'STUDY', N'0011a001', N'PatientLocation', N'SH')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'STUDY', N'00080020', N'StudyDate', N'DA')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'STUDY', N'00080030', N'StudyTime', N'TM')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'STUDY', N'00080090', N'ReferringPhysiciansName', N'PN')
+INSERT [dbo].[TableFields] ([TableName], [Tag], [FieldName], [VR]) VALUES (N'STUDY', N'00081030', N'StudyDescription', N'LO')
+
+CREATE TABLE [dbo].[Study](
+	[StudyDate] [varchar](max) NULL,
+	[StudyTime] [varchar](max) NULL,
+	[StudyDescription] [varchar](max) NULL,
+	[PatientID] [varchar](50) NOT NULL,
+	[StudyInstanceUID] [varchar](50) NOT NULL,
+	[StudyID] [varchar](max) NULL,
+	[AccessionNumber] [varchar](max) NULL,
+	[ReferringPhysiciansName] [varchar](max) NULL,
+	[PatientLocation] [varchar](max) NULL,
+) 
+
+CREATE TABLE [dbo].[SOPInstance](
+	[SOPClassUID] [varchar](max) NOT NULL,
+	[SOPInstanceUID] [varchar](50) NOT NULL,
+	[SeriesInstanceUID] [varchar](max) NOT NULL,
+	[InstanceCreationDate] [varchar](max) NULL,
+	[InstanceCreationTime] [varchar](max) NULL,
+	[InstanceCreatorUID] [varchar](max) NULL,
+	[DeviceType] [varchar](max) NULL,
+	[DeviceRecordResult] [varchar](max) NULL,
+	[ContributingEquipmentSequence] [varchar](max) NOT NULL,
+	[RecordMeaning] [varchar](max) NULL,
+) 
+
+CREATE TABLE [dbo].[Series](
+	[SeriesDate] [varchar](50) NULL,
+	[SeriesTime] [varchar](50) NULL,
+	[Modality] [varchar](50) NULL,
+	[StudyInstanceUID] [varchar](50) NOT NULL,
+	[SeriesInstanceUID] [varchar](50) NOT NULL,
+	[SeriesNumber] [varchar](50) NULL,
+)
+
+CREATE TABLE [dbo].[Patient](
+	[PatientName] [varchar](max) NULL,
+	[PatientID] [varchar](30) NOT NULL,
+	[PatientsBirthTime] [varchar](max) NULL,
+	[PatientsBirthDate] [varchar](max) NULL,
+	[PatientsSex] [varchar](max) NULL,
+)
+
+CREATE TABLE [dbo].[OperatorRegistration](
+	[OperatorName] [nvarchar](50) NOT NULL,
+	[OperatorID] [nvarchar](50) NOT NULL,
+	[OperatorQRID] [nvarchar](50) NOT NULL,
+)
+
+CREATE TABLE [dbo].[GlobalParam](
+	[SeriesInstanceCount] [int] NOT NULL,
+	[SOPInstanceCount] [int] NOT NULL,
+	[StudyInstanceCount] [int] NOT NULL,
+	[PatientCount] [int] NOT NULL,
+	[UID] [nchar](30) NOT NULL,
+	[PKey] [int] NOT NULL,
+	[SeriesNumberCount] [int] NOT NULL,
+	[PatientPCDListVersion] [int] NULL,
+	[DeviceRegistrationListVersion] [int] NULL,
+	[OperatorRegistrationListVersion] [int] NULL,
+)
+
+INSERT [dbo].[GlobalParam] ([SeriesInstanceCount], [SOPInstanceCount], [StudyInstanceCount], [PatientCount], [UID], [PKey], [SeriesNumberCount], [PatientPCDListVersion], [DeviceRegistrationListVersion], [OperatorRegistrationListVersion]) VALUES (0, 0, 0, 0, N'TargetUID', 0, 0, 0, 0, 0)
+

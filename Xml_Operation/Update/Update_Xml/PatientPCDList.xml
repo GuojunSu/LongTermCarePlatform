@@ -1,0 +1,1241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<POCList>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">連XX</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0001</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">19921023</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">123!P0001</Tag0011a001>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">張盧**</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0002</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">19301015</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">F</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">101-2!P0002</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">20150103</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">06:08</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.4</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">4</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">20160225</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM"></Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.0.02</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">2</Tag00200011>
+      </AssignedSeries>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">20160225</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">2211</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.0.1</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">2</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">高*蘭</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0003</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">19270729</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">F</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">102-1!P0003</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">20140207</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">18:26</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.5</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">5</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">20160225</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM"></Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.0.03</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">3</Tag00200011>
+      </AssignedSeries>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">20160225</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">2212</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.0.3</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">3</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">鍾劉**</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0004</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">19230516</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">F</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">102-2!P0004</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">20090810</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">07:18</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.6</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">6</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">20160225</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM"></Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.0.04</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">4</Tag00200011>
+      </AssignedSeries>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">20160225</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">2213</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.0.4</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">4</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">林*玉</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0005</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">19510922</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">F</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">103-1!P0005</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">20150901</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">21:05</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.7</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">7</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">20160225</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">2214</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.0.5</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">5</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">林*真</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0006</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">19410801</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">F</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">103-2!P0006</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">20150423</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">09:04</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.8</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">8</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">20160225</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM"></Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.0.06</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">6</Tag00200011>
+      </AssignedSeries>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">20160225</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">2215</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.0.6</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">6</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">林*美</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0007</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">19410106</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">F</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">106!P0007</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">20140305</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">1124</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.9</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">9</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">20160225</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM"></Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.0.07</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS"></Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">1</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0008</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">11111111</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">F</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">sss!P0008</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">30111111</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">32:23</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.369</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">369</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">30111111</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">32:23</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.184</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">184</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">123</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0009</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">19840502</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">A456!P0009</Tag0011a001>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">8465</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0010</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">19980215</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">W123!P0010</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">20080512</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">05:20</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.23</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">23</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">20160412</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">2148</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.0.58</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">872</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">張明月</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0011</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1943/04/03</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">1!P0011</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2015/01/26</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">16:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.325</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">325</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2015/01/26</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">16:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.140</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">140</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">鐘和平</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0012</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1946/11/07</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">2!P0012</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2000/10/08</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">17:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.326</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">326</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2000/10/08</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">17:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.141</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">141</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">邱性義</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0013</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1958/04/16</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">3!P0013</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2006/05/03</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">18:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.327</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">327</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2006/05/03</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">18:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.142</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">142</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">高文義</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0014</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1934/01/01</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">4!P0014</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2010/11/19</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">19:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.328</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">328</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2010/11/19</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">19:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.143</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">143</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">林景雲</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0015</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1934/07/30</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">5!P0015</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2015/09/01</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">20:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.329</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">329</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2015/09/01</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">20:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.144</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">144</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">鄒汎寧</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0016</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1959/10/19</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">6!P0016</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2013/06/02</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">21:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.330</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">330</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2013/06/02</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">21:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.145</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">145</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">張阿珠</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0017</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1928/02/15</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">7!P0017</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2014/06/01</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">22:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.331</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">331</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2014/06/01</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">22:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.146</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">146</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">王秀珠</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0018</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1931/10/18</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">8!P0018</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2007/06/24</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">23:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.332</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">332</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2007/06/24</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">23:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.147</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">147</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">聞美足</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0019</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1941/03/01</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">9!P0019</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2011/05/23</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">00:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.333</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">333</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2011/05/23</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">00:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.148</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">148</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">王徐德楚</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0020</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1937/12/20</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">10!P0020</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2010/12/22</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">01:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.334</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">334</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2010/12/22</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">01:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.149</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">149</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">張綢妹</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0021</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1937/11/15</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">11!P0021</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2012/07/26</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">02:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.335</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">335</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2012/07/26</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">02:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.150</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">150</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">蕭富進</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0022</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1955/09/06</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">12!P0022</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2014/03/31</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">03:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.336</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">336</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2014/03/31</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">03:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.151</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">151</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">蕭新琴</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0023</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1934/07/02</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">13!P0023</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2014/10/24</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">04:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.337</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">337</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2014/10/24</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">04:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.152</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">152</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">周憲五</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0024</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1945/03/21</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">14!P0024</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2005/08/21</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">05:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.338</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">338</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2005/08/21</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">05:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.153</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">153</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">林金生</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0025</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1946/09/20</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">15!P0025</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2007/07/18</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">06:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.339</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">339</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2007/07/18</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">06:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.154</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">154</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">馬明柱</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0026</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1917/02/02</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">16!P0026</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2014/11/28</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">07:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.340</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">340</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2014/11/28</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">07:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.155</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">155</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">張文石</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0027</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1943/02/20</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">17!P0027</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2011/11/22</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">08:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.341</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">341</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2011/11/22</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">08:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.156</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">156</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">簡定國</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0028</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1933/09/15</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">18!P0028</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2008/08/22</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">09:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.342</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">342</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2008/08/22</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">09:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.157</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">157</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">陳進發</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0029</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1952/12/11</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">19!P0029</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2013/02/01</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">10:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.343</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">343</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2013/02/01</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">10:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.158</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">158</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">羅信龍</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0030</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1948/12/24</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">20!P0030</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2011/01/26</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">11:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.344</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">344</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2011/01/26</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">11:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.159</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">159</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">陳邦雄</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0031</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1949/01/01</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">21!P0031</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2012/04/09</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">12:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.345</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">345</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2012/04/09</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">12:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.160</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">160</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">廖富順</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0032</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1949/11/05</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">22!P0032</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2015/07/15</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">13:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.346</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">346</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2015/07/15</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">13:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.161</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">161</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">羅玉梅</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0033</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1937/01/03</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">23!P0033</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2013/04/09</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">14:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.347</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">347</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2013/04/09</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">14:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.162</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">162</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">馬    蘭</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0034</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1937/01/15</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">24!P0034</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2012/07/01</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">15:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.348</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">348</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2012/07/01</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">15:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.163</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">163</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">曾嬌妹</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0035</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1927/10/02</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">25!P0035</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2015/04/15</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">16:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.349</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">349</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2015/04/15</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">16:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.164</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">164</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">余寶珠</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0036</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1926/11/06</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">26!P0036</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2015/08/06</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">17:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.350</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">350</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2015/08/06</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">17:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.165</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">165</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">黃吳微</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0037</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1925/11/05</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">27!P0037</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2010/01/01</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">18:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.351</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">351</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2010/01/01</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">18:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.166</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">166</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">林記妹</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0038</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1945/02/01</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">28!P0038</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2011/02/06</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">19:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.352</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">352</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2011/02/06</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">19:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.167</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">167</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">鄭秀瑛</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0039</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1957/09/15</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">29!P0039</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2015/02/27</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">20:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.353</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">353</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2015/02/27</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">20:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.168</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">168</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">梁二金</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0040</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1936/03/02</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">30!P0040</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2014/09/01</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">21:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.354</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">354</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2014/09/01</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">21:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.169</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">169</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">李吳香</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0041</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1920/09/29</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">31!P0041</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2008/03/08</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">22:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.355</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">355</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2008/03/08</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">22:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.170</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">170</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">吳    玉</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0042</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1940/04/05</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">32!P0042</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2012/11/06</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">23:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.356</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">356</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2012/11/06</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">23:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.171</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">171</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">黃阿緞</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0043</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1921/02/10</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">33!P0043</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2014/10/29</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">00:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.357</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">357</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2014/10/29</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">00:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.172</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">172</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">李黃彩燕</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0044</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1931/06/12</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">34!P0044</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2015/02/17</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">01:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.358</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">358</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2015/02/17</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">01:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.173</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">173</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">劉雙妹</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0045</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1934/11/19</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">35!P0045</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2013/02/25</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">02:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.359</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">359</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2013/02/25</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">02:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.174</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">174</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">劉興統</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0046</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1936/02/02</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">36!P0046</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2008/11/27</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">03:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.360</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">360</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2008/11/27</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">03:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.175</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">175</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">林藝宏</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0047</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1936/07/26</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">37!P0047</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2014/06/08</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">04:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.361</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">361</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2014/06/08</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">04:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.176</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">176</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">蔡月湘</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0048</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1921/03/15</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">38!P0048</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2015/07/01</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">05:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.362</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">362</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2015/07/01</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">05:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.177</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">177</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">陳千妹</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0049</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">1930/11/20</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">39!P0049</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">2014/02/21</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">06:32</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.363</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">363</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">2014/02/21</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">06:32</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS">NULL</Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.178</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">178</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">張阿花</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0050</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">19921023</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">A103!P0050</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">20150223</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">12:00</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.364</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">364</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">20150223</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">12:00</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.179</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">179</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">2</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0051</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">33331221</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">11111!P0051</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">30221023</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">33:00</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.370</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">370</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">30221023</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">33:00</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.185</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">185</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">test1111</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0052</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">20000101</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">A-2000!P0052</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">20150202</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">12:20</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.374</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">374</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">20150202</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">12:20</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.189</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">189</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">Becker</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0100</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">19660325</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">A-001!P0100</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">20160508</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">13:00</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.365</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">365</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">20160508</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">13:00</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.180</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">180</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+  <PatientRequest>
+    <Tag00100010 FieldName="PatientName" VR="PN">Becker</Tag00100010>
+    <Tag00100020 FieldName="PatientID" VR="LO">P0101</Tag00100020>
+    <Tag00100030 FieldName="PatientsBirthDate" VR="DA">19660325</Tag00100030>
+    <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+    <Tag0011a001 FieldName="PatientLocation" VR="SH">A-002!P0101</Tag0011a001>
+    <AssignedStudy>
+      <Tag00080020 FieldName="StudyDate" VR="DA">20160508</Tag00080020>
+      <Tag00080030 FieldName="StudyTime" VR="TM">15:30</Tag00080030>
+      <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+      <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+      <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+      <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.366</Tag0020000d>
+      <Tag00200010 FieldName="StudyID" VR="SH">366</Tag00200010>
+      <AssignedSeries>
+        <Tag00080021 FieldName="SeriesDate" VR="DA">20160508</Tag00080021>
+        <Tag00080031 FieldName="SeriesTime" VR="TM">15:30</Tag00080031>
+        <Tag00080060 FieldName="Modality" VR="CS"></Tag00080060>
+        <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.181</Tag0020000e>
+        <Tag00200011 FieldName="SeriesNumber" VR="IS">181</Tag00200011>
+      </AssignedSeries>
+    </AssignedStudy>
+  </PatientRequest>
+</POCList>

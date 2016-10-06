@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<PATIENT>
+  <Tag00100010 FieldName="PatientName" VR="PN"></Tag00100010>
+  <Tag00100020 FieldName="PatientID" VR="LO"></Tag00100020>
+  <Tag00100030 FieldName="PatientsBirthDate" VR="DA"></Tag00100030>
+  <Tag00100040 FieldName="PatientsSex" VR="CS"></Tag00100040>
+</PATIENT>

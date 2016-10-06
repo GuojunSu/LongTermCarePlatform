@@ -29,12 +29,13 @@ public class search
     
     string[] QFieldName = new string[50], Qvalue = new string[25], QVR = new string[25] ,Tag = new string[50], FieldName = new string[50];
     int a = 1;
-    public int ProcessXML(XDocument file,string userid)
+    public int ProcessXML(XDocument file,string userid,string DBpath)
     {
         string level;
         SqlCommand sqlCmd1;
         SqlDataReader read1;
-        SqlConnection sqlCon = new SqlConnection(WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+        //SqlConnection sqlCon = new SqlConnection(WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+        SqlConnection sqlCon = new SqlConnection(DBpath);
         sqlCon.Open();
 
         
@@ -83,13 +84,14 @@ public class search
                     Terms += ' ' + "and ";
             }
         }
-        return Query(level, userid);
+        return Query(level, userid,DBpath);
     }
-    public int Query(string level,string userid)//Search db
+    public int Query(string level,string userid,string DBpath)//Search db
     {
         DirectoryInfo DIFO1 = new DirectoryInfo(@"D:\C sharp code\LongTermCare(Xml)\Search\Search_Xml\" + userid);//userid
         DIFO1.Create();
-        SqlConnection sqlCon = new SqlConnection(WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+       // SqlConnection sqlCon = new SqlConnection(WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+        SqlConnection sqlCon = new SqlConnection(DBpath);
         sqlCon.Open();
         switch (level)
         {//read2:Tag and FieldName
@@ -102,8 +104,8 @@ public class search
                     break;
                 }
             case "STUDY":
-                {
-                    sqlCmd1 = new SqlCommand("select * from Patient,Study " + Terms + "and Study.PatientID=Patient.PatientID", sqlCon);//"select * from Patient,Study '" + Terms + "'" + "and Study.PatientID=Patient.PatientID"
+                {               
+                    sqlCmd1 = new SqlCommand("select * from Study left join Patient on Study.PatientID=Patient.PatientID "+Terms, sqlCon);//"select * from Patient,Study '" + Terms + "'" + "and Study.PatientID=Patient.PatientID"
                     read1 = sqlCmd1.ExecuteReader();
                     sqlCmd1 = new SqlCommand("select DISTINCT tag ,FieldName from TableFields where TableName='PATIENT' or TableName='STUDY' order by FieldName", sqlCon);
                     read2 = sqlCmd1.ExecuteReader();
@@ -111,7 +113,7 @@ public class search
                 }
             case "SERIES":
                 {
-                    sqlCmd1 = new SqlCommand("select * from Patient,Study,Series  '" + Terms + "'" + "and  Series.StudyInstanceUID=Study.StudyInstanceUID and Study.PatientID=Patient.PatientID", sqlCon);
+                    sqlCmd1 = new SqlCommand("select * from Series left join Study on Series.StudyInstanceUID=Study.StudyInstanceUID left join Patient on Study.PatientID=Patient.PatientID "+Terms, sqlCon);
                     read1 = sqlCmd1.ExecuteReader();
                     sqlCmd1 = new SqlCommand("select DISTINCT tag ,FieldName from TableFields where TableName='PATIENT' or TableName='STUDY' or TableName='SERIES' order by FieldName", sqlCon);
                     read2 = sqlCmd1.ExecuteReader();
@@ -119,8 +121,7 @@ public class search
                 }
             case "SOPInstance":
                 {
-                    string a = "select distinct * from Patient,Study,Series,SOPInstance  " + Terms + "and SOPInstance.SeriesInstanceUID=Series.SeriesInstanceUID and Series.StudyInstanceUID=Study.StudyInstanceUID and Study.PatientID=Patient.PatientID";
-                    sqlCmd1 = new SqlCommand(a, sqlCon);
+                    sqlCmd1 = new SqlCommand("select * from SOPInstance left join Series on SOPInstance.SeriesInstanceUID=Series.SeriesInstanceUID left join Study on Series.StudyInstanceUID=Study.StudyInstanceUID left join Patient on Study.PatientID=Patient.PatientID "+Terms, sqlCon);
                     read1 = sqlCmd1.ExecuteReader();
                     sqlCmd1 = new SqlCommand("select DISTINCT tag ,FieldName from TableFields where TableName='PATIENT' or TableName='STUDY' or TableName='SERIES' or TableName='SOPInstance' order by FieldName", sqlCon);
                     read2 = sqlCmd1.ExecuteReader();

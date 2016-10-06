@@ -12,8 +12,8 @@ namespace LongTermCare_Xml_.Models.Setting
         public XDocument InsertXml { get; set; }
         public InitXml(SettingInfo info)
         {
-            InsertXml = XDocument.Load(info.InsertPath + "InsertModel\\Insert.xml");
-            StudyXml = XDocument.Load(info.SearchPath + "SearchModel\\STUDYXML-1.xml");
+            //InsertXml = XDocument.Load(info.InsertPath + "InsertModel\\Insert.xml");
+            //StudyXml = XDocument.Load(info.SearchPath + "SearchModel\\STUDYXML-1.xml");
         }
     }
 }

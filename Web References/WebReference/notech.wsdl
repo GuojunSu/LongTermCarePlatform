@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptText">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EncryptTextResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="search_tree_no">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="uuid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="search_tree_noResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="search_tree_noResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="search_portal_type">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="search_portal_typeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="search_portal_typeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="search_portal_account">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="search_portal_accountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="search_portal_accountResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="import">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="USERS_TREE_NO" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="users_type_no" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user_id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="e_mail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="sex_no" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="is_leaf" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="EncryptTextSoapIn">
+    <wsdl:part name="parameters" element="tns:EncryptText" />
+  </wsdl:message>
+  <wsdl:message name="EncryptTextSoapOut">
+    <wsdl:part name="parameters" element="tns:EncryptTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="search_tree_noSoapIn">
+    <wsdl:part name="parameters" element="tns:search_tree_no" />
+  </wsdl:message>
+  <wsdl:message name="search_tree_noSoapOut">
+    <wsdl:part name="parameters" element="tns:search_tree_noResponse" />
+  </wsdl:message>
+  <wsdl:message name="search_portal_typeSoapIn">
+    <wsdl:part name="parameters" element="tns:search_portal_type" />
+  </wsdl:message>
+  <wsdl:message name="search_portal_typeSoapOut">
+    <wsdl:part name="parameters" element="tns:search_portal_typeResponse" />
+  </wsdl:message>
+  <wsdl:message name="search_portal_accountSoapIn">
+    <wsdl:part name="parameters" element="tns:search_portal_account" />
+  </wsdl:message>
+  <wsdl:message name="search_portal_accountSoapOut">
+    <wsdl:part name="parameters" element="tns:search_portal_accountResponse" />
+  </wsdl:message>
+  <wsdl:message name="importSoapIn">
+    <wsdl:part name="parameters" element="tns:import" />
+  </wsdl:message>
+  <wsdl:message name="importSoapOut">
+    <wsdl:part name="parameters" element="tns:importResponse" />
+  </wsdl:message>
+  <wsdl:portType name="notechSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptText">
+      <wsdl:input message="tns:EncryptTextSoapIn" />
+      <wsdl:output message="tns:EncryptTextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="search_tree_no">
+      <wsdl:input message="tns:search_tree_noSoapIn" />
+      <wsdl:output message="tns:search_tree_noSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="search_portal_type">
+      <wsdl:input message="tns:search_portal_typeSoapIn" />
+      <wsdl:output message="tns:search_portal_typeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="search_portal_account">
+      <wsdl:input message="tns:search_portal_accountSoapIn" />
+      <wsdl:output message="tns:search_portal_accountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="import">
+      <wsdl:input message="tns:importSoapIn" />
+      <wsdl:output message="tns:importSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="notechSoap" type="tns:notechSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptText">
+      <soap:operation soapAction="http://tempuri.org/EncryptText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search_tree_no">
+      <soap:operation soapAction="http://tempuri.org/search_tree_no" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search_portal_type">
+      <soap:operation soapAction="http://tempuri.org/search_portal_type" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search_portal_account">
+      <soap:operation soapAction="http://tempuri.org/search_portal_account" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="import">
+      <soap:operation soapAction="http://tempuri.org/import" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="notechSoap12" type="tns:notechSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptText">
+      <soap12:operation soapAction="http://tempuri.org/EncryptText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search_tree_no">
+      <soap12:operation soapAction="http://tempuri.org/search_tree_no" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search_portal_type">
+      <soap12:operation soapAction="http://tempuri.org/search_portal_type" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search_portal_account">
+      <soap12:operation soapAction="http://tempuri.org/search_portal_account" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="import">
+      <soap12:operation soapAction="http://tempuri.org/import" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="notech">
+    <wsdl:port name="notechSoap" binding="tns:notechSoap">
+      <soap:address location="http://203.64.84.113/LFPCD/notech.asmx" />
+    </wsdl:port>
+    <wsdl:port name="notechSoap12" binding="tns:notechSoap12">
+      <soap12:address location="http://203.64.84.113/LFPCD/notech.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SOPInstanceTemplate>
+
+   <Tag00080012 FieldName="InstanceCreatorDate" VR="DA">20150816</Tag00080012>
+  <Tag00080014 FieldName="InstanceCreatorUID" VR="UI">12131231311</Tag00080014>
+  <Tag00080013 FieldName="InstanceCreatorTime" VR="TM">170349</Tag00080013>
+  <Tag00080016 FieldName="SOPClassUID" VR="UI">2.16.886.104.100661.100000.99.1.10407</Tag00080016>
+  <Tag00080018 FieldName="SOPInstanceUID" VR="UI">hub 寫入</Tag00080018>
+  <Tag0027a001 FieldName="DeviceRecordResult" VR="LT">
+    <!-- 以下標籤及量測單位、範圍、編碼機制須明確定義，初期準備暫訂之說明文件，利於產生端即呈現端處理。後續可考慮標準化規格，如 IHE 及 HL7 FHIR -->
+    <SBP>125</SBP>
+    <DBP>75</DBP>
+    <PUL>66</PUL>
+  </Tag0027a001>
+
+</SOPInstanceTemplate>

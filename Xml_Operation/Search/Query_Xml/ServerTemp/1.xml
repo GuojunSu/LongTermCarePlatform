@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<STUDY>
+  <Tag0011a001 FieldName="PatientBed" VR="SH">H707-2</Tag0011a001>
+  <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+  <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+  <Tag00100010 FieldName="PatientName" VR="PN">Joe</Tag00100010>
+  <Tag00100020 FieldName="PatientID" VR="LO">0</Tag00100020>
+  <Tag00100030 FieldName="PatientsBirthDate" VR="DA">19920217</Tag00100030>
+  <Tag00100032 FieldName="PatientsBirthTime" VR="TM">145920</Tag00100032>
+  <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+  <Tag00080020 FieldName="StudyDate" VR="DA">20150303</Tag00080020>
+  <Tag00080030 FieldName="StudyTime" VR="TM">123030</Tag00080030>
+  <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+  <Tag00100020 FieldName="PatientID" VR="LO">0</Tag00100020>
+  <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.0</Tag0020000d>
+  <Tag00200010 FieldName="StudyID" VR="SH">0</Tag00200010>
+</STUDY>

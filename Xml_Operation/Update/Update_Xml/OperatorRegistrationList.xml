@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OperatorList>
+  <OperatorRegistration>
+    <OperatorName>阿天</OperatorName>
+    <OperatorID>A01</OperatorID>
+    <OperatorQRID>C001</OperatorQRID>
+  </OperatorRegistration>
+  <OperatorRegistration>
+    <OperatorName>阿潤</OperatorName>
+    <OperatorID>A02</OperatorID>
+    <OperatorQRID>C002</OperatorQRID>
+  </OperatorRegistration>
+  <OperatorRegistration>
+    <OperatorName>陳幸琴</OperatorName>
+    <OperatorID>A03</OperatorID>
+    <OperatorQRID>C005</OperatorQRID>
+  </OperatorRegistration>
+  <OperatorRegistration>
+    <OperatorName>謝金蓮</OperatorName>
+    <OperatorID>A04</OperatorID>
+    <OperatorQRID>C006</OperatorQRID>
+  </OperatorRegistration>
+</OperatorList>

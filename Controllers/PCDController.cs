@@ -1,55 +1,24 @@
-﻿using LongTermCare_Xml_.Models.ProcessXml;
+﻿using LongTermCare_Xml_.Models.Repository;
 using LongTermCare_Xml_.Models.Setting;
-using MemoryCacher;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Net.Http.Formatting;
 using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Xml;
-using System.Xml.Linq;
 
 namespace LongTermCare_Xml_.Controllers
 {
     [RoutePrefix("Api/PCD")]
     public class PCDController : ApiController
     {
-
-        private ProcessXml XmlOperation { get; set; }
-        private SettingInfo Info { get; set; }
-        private InitXml Xml { get; set; }
+        private PCDRepository PCD_Operation;
+        //private SettingInfo Info { get; set; }
+        //private InitXml Xml { get; set; }
         public PCDController()
         {
-            string ClassName = "ProcessXml", SetString = "SetPath", InitXmlDoc = "InitXml";
-            MemoryCacherApi Cache = new MemoryCacherApi();
-
-            //init setting
-            if ((Info = (SettingInfo)Cache.GetValue(SetString)) == null)
-            {
-                Info = new SettingInfo();
-                DateTimeOffset TimeOffset = DateTimeOffset.Now.AddMonths(1);
-                Cache.AddCache(SetString, Info, TimeOffset);
-            }
-
-            //init xml
-            if ((Xml = (InitXml)Cache.GetValue(InitXmlDoc)) == null)
-            {
-                Xml = new InitXml(Info);
-                DateTimeOffset TimeOffset = DateTimeOffset.Now.AddHours(5);
-                Cache.AddCache(InitXmlDoc, Xml, TimeOffset);
-            }
-
-            //init processxml
-            if ((XmlOperation = (ProcessXml)Cache.GetValue(ClassName)) == null)
-            {
-                XmlOperation = new ProcessXml(Info, Xml);
-                DateTimeOffset TimeOffset = DateTimeOffset.Now.AddHours(5);
-                Cache.AddCache(ClassName, XmlOperation, TimeOffset);
-            }
+            PCD_Operation = new PCDRepository();
         }
 
         //新增PCD 資料
@@ -58,9 +27,14 @@ namespace LongTermCare_Xml_.Controllers
         {
             try
             {
-                //要做log紀錄
                 if (PCD != null)
-                    XmlOperation.InsertOperation(PCD);
+                {
+                    SettingInfo Path_Info = new SettingInfo();
+                    string PathStr = Path_Info.BasicPath;
+                    PathStr += "Insert於" + DateTime.Now.ToString("HH點mm分ss秒") + "TempFile.xml";
+                    PCD.Save(PathStr);
+                    PCD_Operation.InsertOperation(PCD);
+                }
                 else
                     return BadRequest();
             }
@@ -72,14 +46,14 @@ namespace LongTermCare_Xml_.Controllers
         }
 
         //現在提供哪個帳號查詢
-        [HttpPost, Route("Search/{account}")]
-        public HttpResponseMessage PCDSearch(XmlDocument SearchXml, string account)
+        [HttpPost, Route("Search/account={account},uid={UID}")]
+        public HttpResponseMessage PCDSearch(XmlDocument SearchXml, string account,string UID)
         {
             int result = 0;
             try
             {
                 if (SearchXml != null)
-                    result = XmlOperation.SearchOperation(SearchXml, account);
+                    result = PCD_Operation.SearchOperation(SearchXml, account, UID);
                 else
                     return new HttpResponseMessage(HttpStatusCode.BadRequest);
             }

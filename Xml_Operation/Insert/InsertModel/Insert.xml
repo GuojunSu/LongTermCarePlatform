@@ -1,0 +1,37 @@
+<PCD>
+  <Tag0011a001 FieldName="PatientBed" VR="SH">123</Tag0011a001>
+  <Tag00100010 FieldName="PatientName" VR="PN">test123</Tag00100010>
+  <Tag00100020 FieldName="PatientID" VR="LO">0</Tag00100020>
+  <Tag00100030 FieldName="PatientsBirthDate" VR="DA">20150315</Tag00100030>
+  <Tag00100032 FieldName="PatientsBirthTime" VR="TM">173030</Tag00100032>
+  <Tag00100040 FieldName="PatientsSex" VR="CS">M</Tag00100040>
+  <Tag0020000d FieldName="StudyInstanceUID" VR="UI">2.16.886.104.100661.100000.0</Tag0020000d>
+  <Tag00080020 FieldName="StudyDate" VR="DA">20150315</Tag00080020>
+  <Tag00080030 FieldName="StudyTime" VR="TM">173030</Tag00080030>
+  <Tag00081030 FieldName="StudyDescription" VR="LO"></Tag00081030>
+  <Tag00200010 FieldName="StudyID" VR="SH">0</Tag00200010>
+  <Tag00080050 FieldName="AccessionNumber" VR="SH"></Tag00080050>
+  <Tag00080090 FieldName="ReferringPhysiciansName" VR="PN"></Tag00080090>
+  <Tag0020000e FieldName="SeriesInstanceUID" VR="UI">2.16.886.104.100661.100000.0</Tag0020000e>
+  <Tag00200011 FieldName="SeriesNumber" VR="IS">0</Tag00200011>
+  <Tag00080060 FieldName="Modality" VR="CS">PCD</Tag00080060>
+  <Tag00080021 FieldName="SeriesDate" VR="DA">20150315</Tag00080021>
+  <Tag00080031 FieldName="SeriesTime" VR="TM">173030</Tag00080031>
+  <Tag00080016 FieldName="SOPClassUID" VR="UI">2.16.886.104.100661.100000.99.1.10407</Tag00080016>
+  <Tag00080018 FieldName="SOPInstanceUID" VR="UI">2.16.886.104.100661.1000000.0</Tag00080018>
+  <Tag0027a001 FieldName="DeviceType" VR="LO">Blood Pressure Monitor</Tag0027a001>
+  <Tag0027a002 FieldName="DeviceRecordResult" VR="LT">
+		<SBP>125</SBP>
+		<DBP>75</DBP>
+		<PUL>66</PUL>
+  </Tag0027a002>
+  <Tag00080012 FieldName="InstanceCreatorDate" VR="DA">20150816</Tag00080012>
+  <Tag00080014 FieldName="InstanceCreatorUID" VR="UI">12131231311</Tag00080014>
+  <Tag00080013 FieldName="InstanceCreatorTime" VR="TM">170349</Tag00080013>
+  <Tag0018a001 FieldName="ContributingEquipmentSequence" VR="LT">
+	<OperationName>test123</OperationName>
+	<OperationUID>123111</OperationUID>
+	<Manufacturer>pp</Manufacturer>
+	<InstitutionName>oo</InstitutionName>
+   </Tag0018a001>
+</PCD>

@@ -31,16 +31,16 @@ public class insert
      ****
      */
     string[] value = new string[100], tag = new string[100], FieldName = new string[100];
-    int Patientcount = 0, Studycount = 0, Seriescount = 0, Imagecount = 0;
+    int Patientcount = 0, Studycount = 0, Seriescount = 0, Imagecount = 0,Index_PID,Index_STUID,Index_SERUID,Index_SOPUID;
 	public insert()
 	{
 		//
 		// TODO: 在這裡新增建構函式邏輯
 		//
 	}
-    public int ProcessXML(XDocument file)
+    public int ProcessXML(XDocument file,string DBpath)
     {
-        SearchFieldName();
+        SearchFieldName(DBpath);
         IEnumerable<XElement> list1 = file.XPathSelectElements("//PCD");//root node
 
         foreach (XElement item in list1.Elements())
@@ -52,18 +52,21 @@ public class insert
             {
                 if (Tagname == tag[index])
                 {
-                    if (Tagname == "0027a002")//DeviceRecordResult
+                    if (Tagname == "0027a001")//DeviceRecordResult
                     {
-                        value[index] = item.FirstNode.ToString().Replace(">", "&gt;").Replace("<", "&lt;");
-                        value[index] += item.FirstNode.NextNode.ToString().Replace(">", "&gt;").Replace("<", "&lt;");
-                        value[index] += item.LastNode.ToString().Replace(">", "&gt;").Replace("<", "&lt;");
+                        value[index] = item.FirstNode.ToString();
+                        if (item.FirstNode.NextNode!=null)
+                        {
+                            value[index] += item.FirstNode.NextNode.ToString();
+                            value[index] += item.LastNode.ToString();
+                        }
                     }
                     else if (Tagname == "0018a001")//ContributingEquipmentSequence
                     {
-                        value[index] = item.FirstNode.ToString().Replace(">", "&gt;").Replace("<", "&lt;");
-                        value[index] += item.FirstNode.NextNode.ToString().Replace(">", "&gt;").Replace("<", "&lt;");
-                        value[index] += item.FirstNode.NextNode.NextNode.ToString().Replace(">", "&gt;").Replace("<", "&lt;");
-                        value[index] += item.LastNode.ToString().Replace(">", "&gt;").Replace("<", "&lt;");
+                        value[index] = item.FirstNode.ToString();
+                        value[index] += item.FirstNode.NextNode.ToString();
+                        value[index] += item.FirstNode.NextNode.NextNode.ToString();
+                        value[index] += item.LastNode.ToString();
                     }
                     else if (item.Value.ToString() != "")
                         value[index] = item.Value.ToString().Replace("'", "''");//replace ' to ''
@@ -73,13 +76,14 @@ public class insert
             }
         }
         for (int i = 0; i < Imagecount; i++)
-            if (value[i] == "")
+            if (value[i] == "" || value[i] ==null)
                 value[i] = "null";
-        return CheckandInsert();
+        return CheckandInsert(DBpath, file);
     }
-    public void SearchFieldName()
+    public void SearchFieldName(string DBpath)
     {
-        SqlConnection sqlCon = new SqlConnection(WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+       // SqlConnection sqlCon = new SqlConnection(WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+        SqlConnection sqlCon = new SqlConnection(DBpath);
         sqlCon.Open();
         //ALL Field Name
         SqlCommand sqlCmd1 = new SqlCommand("select DISTINCT tag as a,FieldName as b  from TableFields where TableFields.FieldName IN (select name from syscolumns where id=object_id('Patient'))", sqlCon);
@@ -94,27 +98,36 @@ public class insert
 
         for (int i = 0; read1.Read(); i++)//4 level table copy to array
         {
+           
             tag[i] = read1["a"].ToString();
             FieldName[i] = read1["b"].ToString();
             Patientcount = i + 1;
+            if (tag[i] == "00100020")
+                Index_PID = i;
         }
         for (int i = Patientcount; read2.Read(); i++)
         {
             tag[i] = read2["a"].ToString();
             FieldName[i] = read2["b"].ToString();
             Studycount = i + 1;
+            if (tag[i] == "0020000d")
+                Index_STUID = i;
         }
         for (int i = Studycount; read3.Read(); i++)
         {
             tag[i] = read3["a"].ToString();
             FieldName[i] = read3["b"].ToString();
             Seriescount = i + 1;
+            if (tag[i] == "0020000e")
+                Index_SERUID = i;
         }
         for (int i = Seriescount; read4.Read(); i++)
         {
             tag[i] = read4["a"].ToString();
             FieldName[i] = read4["b"].ToString();
             Imagecount = i + 1;
+            if (tag[i] == "00080018")
+                Index_SOPUID = i;
         }
         sqlCmd1.Cancel();
         sqlCmd2.Cancel();
@@ -127,15 +140,15 @@ public class insert
         sqlCon.Close();
         sqlCon.Dispose();
     }
-    public int CheckandInsert()
+    public int CheckandInsert(string DBpath, XDocument file)
     {
         SqlConnection sqlCon = new SqlConnection(WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
         sqlCon.Open();
         //Check Duplicate
-        SqlCommand sqlCmd1 = new SqlCommand("select Count(PatientID) as a from Patient where PatientID ='" + value[1] + "'", sqlCon);
-        SqlCommand sqlCmd2 = new SqlCommand("select Count(StudyInstanceUID) as a from Study where StudyInstanceUID ='" + value[12] + "'", sqlCon);
-        SqlCommand sqlCmd3 = new SqlCommand("select Count(SeriesInstanceUID) as a from Series where SeriesInstanceUID='" + value[18] + "'", sqlCon);
-        SqlCommand sqlCmd4 = new SqlCommand("select Count(SOPInstanceUID) as a from SOPInstance where SOPInstanceUID='" + value[24] + "'", sqlCon);
+        SqlCommand sqlCmd1 = new SqlCommand("select Count(PatientID) as a from Patient where PatientID ='" + value[Index_PID] + "'", sqlCon);
+        SqlCommand sqlCmd2 = new SqlCommand("select Count(StudyInstanceUID) as a from Study where StudyInstanceUID ='" + value[Index_STUID] + "'", sqlCon);
+        SqlCommand sqlCmd3 = new SqlCommand("select Count(SeriesInstanceUID) as a from Series where SeriesInstanceUID='" + value[Index_SERUID] + "'", sqlCon);
+        SqlCommand sqlCmd4 = new SqlCommand("select Count(SOPInstanceUID) as a from SOPInstance where SOPInstanceUID='" + value[Index_SOPUID] + "'", sqlCon);
         SqlDataReader read1 = sqlCmd1.ExecuteReader(); read1.Read();
         SqlDataReader read2 = sqlCmd2.ExecuteReader(); read2.Read();
         SqlDataReader read3 = sqlCmd3.ExecuteReader(); read3.Read();
@@ -268,6 +281,8 @@ public class insert
         }
         else { return 500; }
 
+        
+        
         sqlCon.Close();
         sqlCon.Dispose();
         return 200;
