@@ -33,7 +33,8 @@ namespace LongTermCare_Xml_.Models.SQL_Operation
                 foreach (PropertyInfo attri in InputObject.GetType().GetProperties())
                 {
                     //assume 
-                    if (Strategy.Any(valueName => attri.Name.Equals(valueName)) && ParamCount != 0);
+                    if (Strategy.Any(valueName => attri.Name.Equals(valueName)) && ParamCount != 0)
+                        continue;
                     else
                     {
                         InitDBDTOConString(ref InputObject, attri, Config[ParamTotalCount - ParamCount] + ";");

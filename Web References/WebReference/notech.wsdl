@@ -55,6 +55,16 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="add_new_institutions">
+        <s:complexType />
+      </s:element>
+      <s:element name="add_new_institutionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="add_new_institutionsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="search_portal_account">
         <s:complexType>
           <s:sequence>
@@ -66,7 +76,7 @@
       <s:element name="search_portal_accountResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="search_portal_accountResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="search_portal_accountResult" type="s:int" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -118,6 +128,12 @@
   <wsdl:message name="search_portal_typeSoapOut">
     <wsdl:part name="parameters" element="tns:search_portal_typeResponse" />
   </wsdl:message>
+  <wsdl:message name="add_new_institutionsSoapIn">
+    <wsdl:part name="parameters" element="tns:add_new_institutions" />
+  </wsdl:message>
+  <wsdl:message name="add_new_institutionsSoapOut">
+    <wsdl:part name="parameters" element="tns:add_new_institutionsResponse" />
+  </wsdl:message>
   <wsdl:message name="search_portal_accountSoapIn">
     <wsdl:part name="parameters" element="tns:search_portal_account" />
   </wsdl:message>
@@ -146,6 +162,10 @@
     <wsdl:operation name="search_portal_type">
       <wsdl:input message="tns:search_portal_typeSoapIn" />
       <wsdl:output message="tns:search_portal_typeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="add_new_institutions">
+      <wsdl:input message="tns:add_new_institutionsSoapIn" />
+      <wsdl:output message="tns:add_new_institutionsSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="search_portal_account">
       <wsdl:input message="tns:search_portal_accountSoapIn" />
@@ -187,6 +207,15 @@
     </wsdl:operation>
     <wsdl:operation name="search_portal_type">
       <soap:operation soapAction="http://tempuri.org/search_portal_type" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_new_institutions">
+      <soap:operation soapAction="http://tempuri.org/add_new_institutions" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -244,6 +273,15 @@
     </wsdl:operation>
     <wsdl:operation name="search_portal_type">
       <soap12:operation soapAction="http://tempuri.org/search_portal_type" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="add_new_institutions">
+      <soap12:operation soapAction="http://tempuri.org/add_new_institutions" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

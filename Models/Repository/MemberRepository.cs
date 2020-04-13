@@ -18,9 +18,9 @@ namespace LongTermCare_Xml_.Models.Repository
             System.Diagnostics.Trace.WriteLine("MemberRepository is clear");
         }
 
-        public string CreateMember(object _object)
+        public OUT CreateMember<OUT>(object _object, OUT _result)
         {
-            string Result = "";
+            int tempvalue = -1;
             //檢查人員的註冊
             try
             {
@@ -28,19 +28,14 @@ namespace LongTermCare_Xml_.Models.Repository
                 Protal_DTO Response = new Protal_DTO();
                 Response = ConvertMethod.MappingXmltoObject(Response, (XmlDocument)_object);
                 Response.Get_Portal_Type("病患").Get_Tree_No();
-                if (!Response.IsRegistration(false))
-                {
-                    if ((Result = Response.AddMember("")).Equals("Success"))
-                        Console.WriteLine("註冊完成");
-                }
-                else
-                    return "IsRegistration";
+                tempvalue = Response.IsRegistration(-1);
+                _result.GetType().GetProperties().SetValue(tempvalue.Equals(0) ? (Response.AddMember("").Equals("Success") ? 0 : -1) : tempvalue, 0);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
             }
-            return Result;
+            return _result;
         }
     }
 }

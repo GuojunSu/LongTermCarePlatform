@@ -23,7 +23,7 @@ namespace LongTermCare_Xml_.WebReference {
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="notechSoap", Namespace="http://tempuri.org/")]
@@ -36,6 +36,8 @@ namespace LongTermCare_Xml_.WebReference {
         private System.Threading.SendOrPostCallback search_tree_noOperationCompleted;
         
         private System.Threading.SendOrPostCallback search_portal_typeOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback add_new_institutionsOperationCompleted;
         
         private System.Threading.SendOrPostCallback search_portal_accountOperationCompleted;
         
@@ -90,6 +92,9 @@ namespace LongTermCare_Xml_.WebReference {
         
         /// <remarks/>
         public event search_portal_typeCompletedEventHandler search_portal_typeCompleted;
+        
+        /// <remarks/>
+        public event add_new_institutionsCompletedEventHandler add_new_institutionsCompleted;
         
         /// <remarks/>
         public event search_portal_accountCompletedEventHandler search_portal_accountCompleted;
@@ -214,12 +219,39 @@ namespace LongTermCare_Xml_.WebReference {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/add_new_institutions", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public string add_new_institutions() {
+            object[] results = this.Invoke("add_new_institutions", new object[0]);
+            return ((string)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void add_new_institutionsAsync() {
+            this.add_new_institutionsAsync(null);
+        }
+        
+        /// <remarks/>
+        public void add_new_institutionsAsync(object userState) {
+            if ((this.add_new_institutionsOperationCompleted == null)) {
+                this.add_new_institutionsOperationCompleted = new System.Threading.SendOrPostCallback(this.Onadd_new_institutionsOperationCompleted);
+            }
+            this.InvokeAsync("add_new_institutions", new object[0], this.add_new_institutionsOperationCompleted, userState);
+        }
+        
+        private void Onadd_new_institutionsOperationCompleted(object arg) {
+            if ((this.add_new_institutionsCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.add_new_institutionsCompleted(this, new add_new_institutionsCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/search_portal_account", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool search_portal_account(string user_id, string password) {
+        public int search_portal_account(string user_id, string password) {
             object[] results = this.Invoke("search_portal_account", new object[] {
                         user_id,
                         password});
-            return ((bool)(results[0]));
+            return ((int)(results[0]));
         }
         
         /// <remarks/>
@@ -309,11 +341,11 @@ namespace LongTermCare_Xml_.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void HelloWorldCompletedEventHandler(object sender, HelloWorldCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class HelloWorldCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -335,11 +367,11 @@ namespace LongTermCare_Xml_.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void EncryptTextCompletedEventHandler(object sender, EncryptTextCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class EncryptTextCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -361,11 +393,11 @@ namespace LongTermCare_Xml_.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void search_tree_noCompletedEventHandler(object sender, search_tree_noCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class search_tree_noCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -387,11 +419,11 @@ namespace LongTermCare_Xml_.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void search_portal_typeCompletedEventHandler(object sender, search_portal_typeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class search_portal_typeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -413,11 +445,37 @@ namespace LongTermCare_Xml_.WebReference {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void add_new_institutionsCompletedEventHandler(object sender, add_new_institutionsCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class add_new_institutionsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal add_new_institutionsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public string Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void search_portal_accountCompletedEventHandler(object sender, search_portal_accountCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class search_portal_accountCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -430,20 +488,20 @@ namespace LongTermCare_Xml_.WebReference {
         }
         
         /// <remarks/>
-        public bool Result {
+        public int Result {
             get {
                 this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
+                return ((int)(this.results[0]));
             }
         }
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void importCompletedEventHandler(object sender, importCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1055.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class importCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {

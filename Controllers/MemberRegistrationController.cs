@@ -32,39 +32,40 @@ namespace LongTermCare_Xml_.Controllers
             SettingXmlValue SetXml = new SettingXmlValue();
             try
             {
-           
+
                 //檢查機器是否註冊
                 if (!ApparatusRepository.CheckMachineMAC(Comsumer))
                 {
                     SetXml.SetXmlValue(ref xdoc, "Registration_Status", 2);
                     Comsumer.Load(xdoc.CreateReader());
-                    return Content(HttpStatusCode.Gone, Comsumer);
+                    return Content(HttpStatusCode.OK, Comsumer);
                 }
                 MethodDelegate Method = null;
                 //註冊人員
-
-                switch (MemberRepository.CreateMember(Comsumer))
+                switch (MemberRepository.CreateMember(Comsumer, -1))
                 {
-                    case "Success":
+                    case 0:
                         Method += RegistartionInfoRepsitory.RegistrationInfo;
                         result = 1;
                         break;
-                    case "IsRegistration":
+                    case 1:
+                        result = 6;
+                        break;
+                    case 2:
                         Method += RegistartionInfoRepsitory.GetRegistrationInfo;
                         result = 5;
                         break;
                     default:
                         throw new Exception();
                 }
-                if (Method(ref Comsumer) == 101)
+                if (Method(ref Comsumer).Equals(101))
                 {
                     xdoc = XDocument.Parse(Comsumer.OuterXml);
                     SetXml.SetXmlValue(ref xdoc, "Registration_Status", result);
                     Comsumer.Load(xdoc.CreateReader());
                     return Ok(Comsumer);
                 }
-            }
-            catch (Exception er)
+            }catch (Exception er)
             {
                 return Content(HttpStatusCode.ExpectationFailed, er.ToString());
             }
